@@ -1,0 +1,49 @@
+{
+  "name": "package",
+  "description": "Package desc.",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/package.esm.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "author": "Imed Adel <aadelimed@gmail.com>",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --env=jsdom",
+    "lint": "tsdx lint src test"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "husky": "^4.2.3",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "tsdx": "^0.12.3",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
+  }
+}
